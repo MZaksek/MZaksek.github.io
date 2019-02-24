@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var size = ["S", "M", "L"];
+
+var chosenSize = size[Math.floor(Math.random()*size.length)];
+
+if (chosenSize == "S")
+{
+    smallCharacters = ["Baby Mario", "Baby Peach", "Toad", "Koopa Troopa", "Baby Luigi", "Baby Daisy", "Toadette", "Dry Bones"]
+    smallVehicles = ["Standard Kart S", "Booster Seat", "Mini Beast", "Cheep Charger", "Tiny Titan", "Blue Falcon", "Standard Bike S", "Bullet Bike", "Bit Bike", "Quacker", "Magikruiser", "Jet Bubble"]
+
+    var chosenCharacter = smallCharacters[Math.floor(Math.random()*smallCharacters.length)];
+    var chosenVehicle = smallVehicles[Math.floor(Math.random()*smallVehicles.length)];
+}
+
+if (chosenSize == "M")
+{
+    mediumCharacters = ["Mario", "Luigi", "Peach", "Yoshi", "Daisy", "Birdo", "Diddy Kong", "Bowser Jr."]
+    mediumVehicles = ["Standard Kart M", "Classic Dragster", "Wild Wing", "Super Blooper", "Daytripper", "Sprinter", "Standard Bike M", "Mach Bike", "Sugarscoot", "Zip Zip", "Sneakster", "Dolphin Dasher"]
+
+    var chosenCharacter = mediumCharacters[Math.floor(Math.random()*mediumCharacters.length)];
+    var chosenVehicle = mediumVehicles[Math.floor(Math.random()*mediumVehicles.length)];
+}
+
+if (chosenSize == "L")
+{
+    largeCharacters = ["Wario", "Waluigi", "Donkey Kong", "Bowser", "King Boo", "Rosalina", "Funky Kong", "Dry Bowser"]
+    largeVehicles = ["Standard Kart L", "Offroader", "Flame Flyer", "Piranha Prowler", "Jetsetter", "Honeycoupe", "Standard Bike L", "Flame Runner", "Wario Bike", "Shooting Star", "Spear", "Phantom"]
+
+    var chosenCharacter = largeCharacters[Math.floor(Math.random()*largeCharacters.length)];
+    var chosenVehicle = largeVehicles[Math.floor(Math.random()*largeVehicles.length)];
+}
+
+document.body.innerHTML = chosenCharacter + " with the " + chosenVehicle;
+</script>
+
+</body>
+</html>
