@@ -2,6 +2,12 @@
 <html>
 <body>
 
+<p>
+Your random combination is:
+</p>
+
+<p id="Random_choices"></p>
+
 <script>
 var size = ["S", "M", "L"];
 
@@ -34,7 +40,7 @@ if (chosenSize == "L")
     var chosenVehicle = largeVehicles[Math.floor(Math.random()*largeVehicles.length)];
 }
 
-document.body.innerHTML = chosenCharacter + " with the " + chosenVehicle;
+document.getElementById("Random_choices").innerHTML = chosenCharacter + " with the " + chosenVehicle;
 </script>
 
 </body>
