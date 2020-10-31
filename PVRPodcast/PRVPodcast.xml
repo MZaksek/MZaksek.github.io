@@ -146,18 +146,5 @@
             <itunes:duration>00:30</itunes:duration>
             <itunes:keywords>All4Christ, Daunting Charge, Ringtone</itunes:keywords>
         </item>
-        <item>
-            <title>Kinetic Flow - Full Album Stream</title>
-            <itunes:author>All4Christ</itunes:author>
-            <itunes:subtitle>Full audio stream of new album, &quot;Kinetic Flow&quot;.</itunes:subtitle>
-            <itunes:summary>Full audio stream of new album, &quot;Kinetic Flow&quot;.</itunes:summary>
-            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/l8pacaoxzonpg4wustjx.mp3"
-            length="42099196" type="audio/mpeg"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/l8pacaoxzonpg4wustjx.mp3</guid>
-            <pubDate>Mon, 25 May 2015 00:00:00 -0600</pubDate>
-            <itunes:duration>29:14</itunes:duration>
-            <itunes:keywords>All4Christ, Kinetic Flow</itunes:keywords>
-        </item>
     </channel>
 </rss>
