@@ -13,7 +13,7 @@
             <itunes:name>Matthew Zaksek</itunes:name>
             <itunes:email>MZaksek@usa.com</itunes:email>
         </itunes:owner>
-        <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg"/>
+        <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg"/>
         <itunes:category text="Music">
         </itunes:category>
         <itunes:explicit>no</itunes:explicit>
@@ -22,10 +22,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>First single from album, &quot;Kinetic Flow&quot;.</itunes:subtitle>
             <itunes:summary>First single from album, &quot;Kinetic Flow&quot;.</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/chmjijystc2atnd2iinb.mp3"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Kinetic%20Flow.mp3"
             length="6510467" type="audio/mpeg"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/chmjijystc2atnd2iinb.mp3</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Kinetic%20Flow.mp3</guid>
             <pubDate>Tue, 11 Nov 2014 00:00:00 -0600</pubDate>
             <itunes:duration>4:31</itunes:duration>
             <itunes:keywords>All4Christ, Kinetic Flow</itunes:keywords>
@@ -35,10 +35,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>Remix of &quot;African Party&quot;.</itunes:subtitle>
             <itunes:summary>Remix of &quot;African Party&quot;.</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/xzhxywzmka13p9gv6bni.mp3"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/African%20Party%20Remix.mp3"
             length="5106124" type="audio/mpeg"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/xzhxywzmka13p9gv6bni.mp3</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/African%20Party%20Remix.mp3</guid>
             <pubDate>Fri, 06 Jun 2014 00:00:00 -0600</pubDate>
             <itunes:duration>3:33</itunes:duration>
             <itunes:keywords>All4Christ, African Party</itunes:keywords>
@@ -48,10 +48,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>First song from single &quot;African Party&quot;.</itunes:subtitle>
             <itunes:summary>First song from single &quot;African Party&quot;.</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/vfqvdexk88godjal5mzg.mp3"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/African%20Party.mp3"
             length="6318624" type="audio/mpeg"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/vfqvdexk88godjal5mzg.mp3</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/African%20Party.mp3</guid>
             <pubDate>Fri, 06 Jun 2014 00:00:00 -0600</pubDate>
             <itunes:duration>4:23</itunes:duration>
             <itunes:keywords>All4Christ, African Party</itunes:keywords>
@@ -61,10 +61,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>From the single, &quot;The Heat&quot;.</itunes:subtitle>
             <itunes:summary>From the single, &quot;The Heat&quot;.</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/bxpvheoeojlqcurt41ju.mp3"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/The%20Heat.mp3"
             length="2823440" type="audio/mpeg"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/bxpvheoeojlqcurt41ju.mp3</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/The%20Heat.mp3</guid>
             <pubDate>Fri, 06 Jun 2014 00:00:00 -0600</pubDate>
             <itunes:duration>1:57</itunes:duration>
             <itunes:keywords>All4Christ, The Heat</itunes:keywords>
@@ -74,10 +74,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>Single released shortly after &quot;Kinetic Flow - Single&quot;. Available exclusively on this podcast!</itunes:subtitle>
             <itunes:summary>Single released shortly after &quot;Kinetic Flow - Single&quot;. Available exclusively on this podcast!</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/yqegvh096kmpozagdynq.mp3"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Transfiguration.mp3"
             length="4565703" type="audio/mpeg"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/yqegvh096kmpozagdynq.mp3</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Transfiguration.mp3</guid>
             <pubDate>Thu, 13 Nov 2014 00:00:00 -0600</pubDate>
             <itunes:duration>3:10</itunes:duration>
             <itunes:keywords>All4Christ, Transfiguration</itunes:keywords>
@@ -87,10 +87,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>Sample created by Matthew Zaksek. Expanse will not be featured in any songs.</itunes:subtitle>
             <itunes:summary>Sample created by Matthew Zaksek. Expanse will not be featured in any songs.</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/stgr7gynd9w2laktiwtl.mp3"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Expanse.mp3"
             length="2279162" type="audio/mpeg"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/stgr7gynd9w2laktiwtl.mp3</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Expanse.mp3</guid>
             <pubDate>Sun, 25 Jan 2015 00:00:00 -0600</pubDate>
             <itunes:duration>1:35</itunes:duration>
             <itunes:keywords>All4Christ, Expanse, Sample</itunes:keywords>
@@ -100,10 +100,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>The official tracklisting from the album &quot;Kinetic Flow&quot;.</itunes:subtitle>
             <itunes:summary>The official tracklisting from the album &quot;Kinetic Flow&quot;.</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/image/upload/z2hwhdz4mexwfgnzooxe.pdf"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Kinetic%20Flow%20Tracklisting.pdf"
             length="503042" type="application/pdf"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/image/upload/z2hwhdz4mexwfgnzooxe.pdf</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Kinetic%20Flow%20Tracklisting.pdf</guid>
             <pubDate>Sun, 28 Dec 2014 00:00:00 -0600</pubDate>
             <itunes:keywords>All4Christ, Kinetic Flow</itunes:keywords>
         </item>
@@ -112,10 +112,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>The official tracklisting from the album &quot;Kinetic Flow&quot;.</itunes:subtitle>
             <itunes:summary>The official tracklisting from the album &quot;Kinetic Flow&quot;.</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/y6lmtsuheyd1prnsxj0p.mp4"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Kinetic%20Flow%20Tracklisting.mp4"
             length="1326195" type="video/mp4"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/y6lmtsuheyd1prnsxj0p.mp4</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Kinetic%20Flow%20Tracklisting.mp4</guid>
             <pubDate>Sun, 28 Dec 2014 00:00:00 -0600</pubDate>
             <itunes:duration>0:30</itunes:duration>
             <itunes:keywords>All4Christ, Kinetic Flow</itunes:keywords>
@@ -125,10 +125,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>Our highly anticipated album, &quot;Kinetic Flow&quot; finally has a release date! Watch the video to find out when it is...</itunes:subtitle>
             <itunes:summary>Our highly anticipated album, &quot;Kinetic Flow&quot; finally has a release date! Watch the video to find out when it is...</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/vz1rx0folrmswlv7zawv.mp4"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Kinetic%20Flow%20Release%20Date.mp4"
             length="1686700" type="video/mp4"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/vz1rx0folrmswlv7zawv.mp4</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Kinetic%20Flow%20Release%20Date.mp4</guid>
             <pubDate>Sat, 28 Mar 2015 00:00:00 -0600</pubDate>
             <itunes:duration>0:30</itunes:duration>
             <itunes:keywords>All4Christ, Kinetic Flow</itunes:keywords>
@@ -138,10 +138,10 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>Ringtone previously released, but not publicized greatly. Use it as your own iPhone ringtone by searching &quot;Daunting Charge&quot; in the iTunes Store.</itunes:subtitle>
             <itunes:summary>Ringtone previously released, but not publicized greatly. Use it as your own iPhone ringtone by searching &quot;Daunting Charge&quot; in the iTunes Store.</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
-            <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/uvsmlbdnzd0xfkdqsjxi.mp3"
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
+            <enclosure url="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Daunting%20Charge.mp3"
             length="716831" type="audio/mpeg"/>
-            <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/uvsmlbdnzd0xfkdqsjxi.mp3</guid>
+            <guid>https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Daunting%20Charge.mp3</guid>
             <pubDate>Sun, 12 Oct 2014 00:00:00 -0600</pubDate>
             <itunes:duration>00:30</itunes:duration>
             <itunes:keywords>All4Christ, Daunting Charge, Ringtone</itunes:keywords>
@@ -151,7 +151,7 @@
             <itunes:author>All4Christ</itunes:author>
             <itunes:subtitle>Full audio stream of new album, &quot;Kinetic Flow&quot;.</itunes:subtitle>
             <itunes:summary>Full audio stream of new album, &quot;Kinetic Flow&quot;.</itunes:summary>
-            <itunes:image href="http://cloudinary-a.akamaihd.net/gawker-media/1388727653020137289.jpg" />
+            <itunes:image href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@7833934e3b4986dc5cf17f8792926dc246e6e861/PVRPodcast/Image.jpg" />
             <enclosure url="http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/l8pacaoxzonpg4wustjx.mp3"
             length="42099196" type="audio/mpeg"/>
             <guid>http://cloudinary-a.akamaihd.net/gawker-media/raw/upload/l8pacaoxzonpg4wustjx.mp3</guid>
