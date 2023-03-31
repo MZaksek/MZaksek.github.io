@@ -2,222 +2,161 @@
 <html>
 
 <head>
-<link rel="shortcut icon" type="image/png" href="https://cloudinary-a.akamaihd.net/idemo/image/fetch/https://mzaksek.github.io/MarioKartWiiRandomizer/favicon.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@master/MarioKartWiiRandomizer/favicon.png"/>
+  <style>
+    body {
+      background-image: linear-gradient(45deg, #2C2C2C 0%, #4D4D4D 100%);
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    }
+    p {
+      font-size: 300%;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    select {
+      font-size: 300%;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    }
+
+    /* Add a media query to adjust the font size on smaller screens */
+    @media (max-width: 768px) {
+      p {
+        font-size: 200%;
+      }
+      select {
+        font-size: 200%;
+      }
+    }
+
+    .refresh-link {
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
+<header>
+  <div class="center">
+    <select id="playerCount" onchange="updatePlayerVisibility();">
+      <option value="1">1 Player</option>
+      <option value="2" selected>2 Players</option>
+      <option value="3">3 Players</option>
+      <option value="4">4 Players</option>
+    </select>
+  </div>
+</header>
+<main>
+  <div>
+    <p>Player 1's random combination is:</p>
+    <p id="Random_choices1"></p>
+  </div>
 
-<p style="font-size:300%;text-align:center;">
-Player 1's random combination is:
-</p>
+  <div>
+    <p>Player 2's combination is:</p>
+    <p id="Random_choices2"></p>
+  </div>
 
-<p id="Random_choices1" style="font-size:300%;text-align:center;"></p>
+  <div>
+    <p>Player 3's combination is:</p>
+    <p id="Random_choices3"></p>
+  </div>
 
+  <div>
+    <p>Player 4's combination is:</p>
+    <p id="Random_choices4"></p>
+  </div>
+</main>
+<footer>
+  <p class="refresh-link">
+  <a href="javascript:updatePlayerVisibility(); generateRandomCombinations();"><img src="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@master/MarioKartWiiRandomizer/randomize-button.png" alt="Refresh" width="828" height="176"></a>
+  </p>
+  <div class="center">
+  <p>Additional Options:</p>
+  </div>
+  <div class="center">
+    <select id="vehicleType" onchange="generateRandomCombinations();">
+      <option value="all" selected>Karts and Bikes</option>
+      <option value="karts">Karts Only</option>
+      <option value="bikes">Bikes Only</option>
+    </select>
+  </div>
+  <div class="center">
+    <select id="sizeFilter" onchange="generateRandomCombinations();">
+      <option value="all" selected>All Sizes</option>
+      <option value="S">Small Only</option>
+      <option value="M">Medium Only</option>
+      <option value="L">Large only</option>
+    </select>
+  </div>
+</footer>
 <script>
-var size = ["S", "M", "L"];
-
-var chosenSize1 = size[Math.floor(Math.random()*size.length)];
-var chosenSize2 = size[Math.floor(Math.random()*size.length)];
-var chosenSize3 = size[Math.floor(Math.random()*size.length)];
-var chosenSize4 = size[Math.floor(Math.random()*size.length)];
-
-if (chosenSize1 == "S")
-{
-    smallCharacters = ["Baby Mario", "Baby Peach", "Toad", "Koopa Troopa", "Baby Luigi", "Baby Daisy", "Toadette", "Dry Bones"]
-    smallVehicles = ["Standard Kart S", "Booster Seat", "Mini Beast", "Cheep Charger", "Tiny Titan", "Blue Falcon", "Standard Bike S", "Bullet Bike", "Bit Bike", "Quacker", "Magikruiser", "Jet Bubble"]
-
-    var chosenCharacter1 = smallCharacters[Math.floor(Math.random()*smallCharacters.length)];
-    var chosenVehicle1 = smallVehicles[Math.floor(Math.random()*smallVehicles.length)];
+  function getRandomItem(arr) {
+  const copy = [...arr];
+  return copy.splice(Math.floor(Math.random() * copy.length), 1)[0];
 }
 
-if (chosenSize2 == "S")
-{
-    smallCharacters = ["Baby Mario", "Baby Peach", "Toad", "Koopa Troopa", "Baby Luigi", "Baby Daisy", "Toadette", "Dry Bones"]
-    smallVehicles = ["Standard Kart S", "Booster Seat", "Mini Beast", "Cheep Charger", "Tiny Titan", "Blue Falcon", "Standard Bike S", "Bullet Bike", "Bit Bike", "Quacker", "Magikruiser", "Jet Bubble"]
+  const size = ["S", "M", "L"];
+  const characters = {
+    S: ["Baby Mario", "Baby Peach", "Toad", "Koopa Troopa", "Baby Luigi", "Baby Daisy", "Toadette", "Dry Bones"],
+    M: ["Mario", "Luigi", "Peach", "Yoshi", "Daisy", "Birdo", "Diddy Kong", "Bowser Jr"],
+    L: ["Wario", "Waluigi", "Donkey Kong", "Bowser", "King Boo", "Rosalina", "Funky Kong", "Dry Bowser"]
+  };
+  const vehicles = {
+    S: ["Standard Kart S", "Booster Seat", "Mini Beast", "Cheep Charger", "Tiny Titan", "Blue Falcon", "Standard Bike S", "Bullet Bike", "Bit Bike", "Quacker", "Magikruiser", "Jet Bubble"],
+    M: ["Standard Kart M", "Classic Dragster", "Wild Wing", "Super Blooper", "Daytripper", "Sprinter", "Standard Bike M", "Mach Bike", "Sugarscoot", "Zip Zip", "Sneakster", "Dolphin Dasher"],
+    L: ["Standard Kart L", "Offroader", "Flame Flyer", "Piranha Prowler", "Jetsetter", "Honeycoupe", "Standard Bike L", "Flame Runner", "Wario Bike", "Shooting Star", "Spear", "Phantom"]
+  };
 
-    var chosenCharacter2 = smallCharacters[Math.floor(Math.random()*smallCharacters.length)];
-    var chosenVehicle2 = smallVehicles[Math.floor(Math.random()*smallVehicles.length)];
-}
+  const usedCharacters = [];
 
-if (chosenSize3 == "S")
-{
-    smallCharacters = ["Baby Mario", "Baby Peach", "Toad", "Koopa Troopa", "Baby Luigi", "Baby Daisy", "Toadette", "Dry Bones"]
-    smallVehicles = ["Standard Kart S", "Booster Seat", "Mini Beast", "Cheep Charger", "Tiny Titan", "Blue Falcon", "Standard Bike S", "Bullet Bike", "Bit Bike", "Quacker", "Magikruiser", "Jet Bubble"]
+  function updatePlayerVisibility() {
+    const playerCount = document.getElementById("playerCount").value;
+    for (let i = 1; i <= 4; i++) {
+      const display = i <= playerCount ? "block" : "none";
+      document.getElementById(`Random_choices${i}`).parentElement.style.display = display;
+    }
+  }
 
-    var chosenCharacter3 = smallCharacters[Math.floor(Math.random()*smallCharacters.length)];
-    var chosenVehicle3 = smallVehicles[Math.floor(Math.random()*smallVehicles.length)];
-}
+  function generateRandomCombinations() {
+    const usedCharacters = [];
+    const vehicleType = document.getElementById("vehicleType").value;
+    const sizeFilter = document.getElementById("sizeFilter").value;
+    const availableSizes = sizeFilter === "all" ? [...size] : [sizeFilter];
 
-if (chosenSize4 == "S")
-{
-    smallCharacters = ["Baby Mario", "Baby Peach", "Toad", "Koopa Troopa", "Baby Luigi", "Baby Daisy", "Toadette", "Dry Bones"]
-    smallVehicles = ["Standard Kart S", "Booster Seat", "Mini Beast", "Cheep Charger", "Tiny Titan", "Blue Falcon", "Standard Bike S", "Bullet Bike", "Bit Bike", "Quacker", "Magikruiser", "Jet Bubble"]
+    for (let i = 1; i <= 4; i++) {
+      const chosenSize = getRandomItem(availableSizes);
+      const availableCharacters = characters[chosenSize].filter(character => !usedCharacters.includes(character));
+      const chosenCharacter = getRandomItem(availableCharacters);
+      
+      let availableVehicles;
+      if (vehicleType === "karts") {
+        availableVehicles = vehicles[chosenSize].slice(0, 6);
+      } else if (vehicleType === "bikes") {
+        availableVehicles = vehicles[chosenSize].slice(6);
+      } else {
+        availableVehicles = vehicles[chosenSize];
+      }
 
-    var chosenCharacter4 = smallCharacters[Math.floor(Math.random()*smallCharacters.length)];
-    var chosenVehicle4 = smallVehicles[Math.floor(Math.random()*smallVehicles.length)];
-}
+      const chosenVehicle = getRandomItem(availableVehicles);
 
-if (chosenSize1 == "M")
-{
-    mediumCharacters = ["Mario", "Luigi", "Peach", "Yoshi", "Daisy", "Birdo", "Diddy Kong", "Bowser Jr"]
-    mediumVehicles = ["Standard Kart M", "Classic Dragster", "Wild Wing", "Super Blooper", "Daytripper", "Sprinter", "Standard Bike M", "Mach Bike", "Sugarscoot", "Zip Zip", "Sneakster", "Dolphin Dasher"]
+      usedCharacters.push(chosenCharacter);
 
-    var chosenCharacter1 = mediumCharacters[Math.floor(Math.random()*mediumCharacters.length)];
-    var chosenVehicle1 = mediumVehicles[Math.floor(Math.random()*mediumVehicles.length)];
-}
+      document.getElementById(`Random_choices${i}`).innerHTML = `${chosenCharacter} with the ${chosenVehicle}<br>
+      <img src="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@master/MarioKartWiiRandomizer/${chosenCharacter}.png" height="300">
+      <img src="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@master/MarioKartWiiRandomizer/vehicles/${chosenVehicle}.png" height="100">`;
+    }
+  }
 
-if (chosenSize2 == "M")
-{
-    mediumCharacters = ["Mario", "Luigi", "Peach", "Yoshi", "Daisy", "Birdo", "Diddy Kong", "Bowser Jr"]
-    mediumVehicles = ["Standard Kart M", "Classic Dragster", "Wild Wing", "Super Blooper", "Daytripper", "Sprinter", "Standard Bike M", "Mach Bike", "Sugarscoot", "Zip Zip", "Sneakster", "Dolphin Dasher"]
-
-    var chosenCharacter2 = mediumCharacters[Math.floor(Math.random()*mediumCharacters.length)];
-    var chosenVehicle2 = mediumVehicles[Math.floor(Math.random()*mediumVehicles.length)];
-}
-
-if (chosenSize3 == "M")
-{
-    mediumCharacters = ["Mario", "Luigi", "Peach", "Yoshi", "Daisy", "Birdo", "Diddy Kong", "Bowser Jr"]
-    mediumVehicles = ["Standard Kart M", "Classic Dragster", "Wild Wing", "Super Blooper", "Daytripper", "Sprinter", "Standard Bike M", "Mach Bike", "Sugarscoot", "Zip Zip", "Sneakster", "Dolphin Dasher"]
-
-    var chosenCharacter3 = mediumCharacters[Math.floor(Math.random()*mediumCharacters.length)];
-    var chosenVehicle3 = mediumVehicles[Math.floor(Math.random()*mediumVehicles.length)];
-}
-
-if (chosenSize4 == "M")
-{
-    mediumCharacters = ["Mario", "Luigi", "Peach", "Yoshi", "Daisy", "Birdo", "Diddy Kong", "Bowser Jr"]
-    mediumVehicles = ["Standard Kart M", "Classic Dragster", "Wild Wing", "Super Blooper", "Daytripper", "Sprinter", "Standard Bike M", "Mach Bike", "Sugarscoot", "Zip Zip", "Sneakster", "Dolphin Dasher"]
-
-    var chosenCharacter4 = mediumCharacters[Math.floor(Math.random()*mediumCharacters.length)];
-    var chosenVehicle4 = mediumVehicles[Math.floor(Math.random()*mediumVehicles.length)];
-}
-
-if (chosenSize1 == "L")
-{
-    largeCharacters = ["Wario", "Waluigi", "Donkey Kong", "Bowser", "King Boo", "Rosalina", "Funky Kong", "Dry Bowser"]
-    largeVehicles = ["Standard Kart L", "Offroader", "Flame Flyer", "Piranha Prowler", "Jetsetter", "Honeycoupe", "Standard Bike L", "Flame Runner", "Wario Bike", "Shooting Star", "Spear", "Phantom"]
-
-    var chosenCharacter1 = largeCharacters[Math.floor(Math.random()*largeCharacters.length)];
-    var chosenVehicle1 = largeVehicles[Math.floor(Math.random()*largeVehicles.length)];
-}
-
-if (chosenSize2 == "L")
-{
-    largeCharacters = ["Wario", "Waluigi", "Donkey Kong", "Bowser", "King Boo", "Rosalina", "Funky Kong", "Dry Bowser"]
-    largeVehicles = ["Standard Kart L", "Offroader", "Flame Flyer", "Piranha Prowler", "Jetsetter", "Honeycoupe", "Standard Bike L", "Flame Runner", "Wario Bike", "Shooting Star", "Spear", "Phantom"]
-
-    var chosenCharacter2 = largeCharacters[Math.floor(Math.random()*largeCharacters.length)];
-    var chosenVehicle2 = largeVehicles[Math.floor(Math.random()*largeVehicles.length)];
-}
-
-if (chosenSize3 == "L")
-{
-    largeCharacters = ["Wario", "Waluigi", "Donkey Kong", "Bowser", "King Boo", "Rosalina", "Funky Kong", "Dry Bowser"]
-    largeVehicles = ["Standard Kart L", "Offroader", "Flame Flyer", "Piranha Prowler", "Jetsetter", "Honeycoupe", "Standard Bike L", "Flame Runner", "Wario Bike", "Shooting Star", "Spear", "Phantom"]
-
-    var chosenCharacter3 = largeCharacters[Math.floor(Math.random()*largeCharacters.length)];
-    var chosenVehicle3 = largeVehicles[Math.floor(Math.random()*largeVehicles.length)];
-}
-
-if (chosenSize4 == "L")
-{
-    largeCharacters = ["Wario", "Waluigi", "Donkey Kong", "Bowser", "King Boo", "Rosalina", "Funky Kong", "Dry Bowser"]
-    largeVehicles = ["Standard Kart L", "Offroader", "Flame Flyer", "Piranha Prowler", "Jetsetter", "Honeycoupe", "Standard Bike L", "Flame Runner", "Wario Bike", "Shooting Star", "Spear", "Phantom"]
-
-    var chosenCharacter4 = largeCharacters[Math.floor(Math.random()*largeCharacters.length)];
-    var chosenVehicle4 = largeVehicles[Math.floor(Math.random()*largeVehicles.length)];
-}
-
-document.getElementById("Random_choices1").innerHTML = chosenCharacter1 + " with the " + chosenVehicle1;
-
-var characterURL1 = "https://cloudinary-a.akamaihd.net/idemo/image/fetch/h_300/https://mzaksek.github.io/MarioKartWiiRandomizer/" + chosenCharacter1 + ".png";
-var vehicleURL1 = "https://cloudinary-a.akamaihd.net/idemo/image/fetch/h_100/https://mzaksek.github.io/MarioKartWiiRandomizer/vehicles/" + chosenVehicle1 + ".png";
-
-document.getElementById("characterURL1").src = characterURL1;
-document.getElementById("vehicleURL1").src = vehicleURL1;
-
+  updatePlayerVisibility(); // Initialize player visibility
+  generateRandomCombinations(); // Generate random combinations
 </script>
-
-<p id="Random_choices1" style="text-align:center;">
-<img id = "characterURL1" src = "characterURL1.png"></img>
-<img id = "vehicleURL1" src = "vehicleURL1.png"></img>
-</p>
-
-<p style="font-size:300%;text-align:center;">
-Player 2's combination is:
-</p>
-<p id="Random_choices2" style="font-size:300%;text-align:center;"></p>
-
-<script>
-document.getElementById("Random_choices2").innerHTML = chosenCharacter2 + " with the " + chosenVehicle2;
-
-var characterURL2 = "https://cloudinary-a.akamaihd.net/idemo/image/fetch/h_300/https://mzaksek.github.io/MarioKartWiiRandomizer/" + chosenCharacter2 + ".png";
-var vehicleURL2 = "https://cloudinary-a.akamaihd.net/idemo/image/fetch/h_100/https://mzaksek.github.io/MarioKartWiiRandomizer/vehicles/" + chosenVehicle2 + ".png";
-
-document.getElementById("characterURL2").src = characterURL2;
-document.getElementById("vehicleURL2").src = vehicleURL2;
-</script>
-
-<p id="Random_choices2" style="text-align:center;">
-<img id = "characterURL2" src = "characterURL2.png"></img>
-<img id = "vehicleURL2" src = "vehicleURL2.png"></img>
-</p>
-
-<p style="font-size:300%;text-align:center;">
-Player 3's combination is:
-</p>
-<p id="Random_choices3" style="font-size:300%;text-align:center;"></p>
-
-<script>
-document.getElementById("Random_choices3").innerHTML = chosenCharacter3 + " with the " + chosenVehicle3;
-
-var characterURL3 = "https://cloudinary-a.akamaihd.net/idemo/image/fetch/h_300/https://mzaksek.github.io/MarioKartWiiRandomizer/" + chosenCharacter3 + ".png";
-var vehicleURL3 = "https://cloudinary-a.akamaihd.net/idemo/image/fetch/h_100/https://mzaksek.github.io/MarioKartWiiRandomizer/vehicles/" + chosenVehicle3 + ".png";
-
-document.getElementById("characterURL3").src = characterURL3;
-document.getElementById("vehicleURL3").src = vehicleURL3;
-</script>
-
-<p id="Random_choices3" style="text-align:center;">
-<img id = "characterURL3" src = "characterURL3.png"></img>
-<img id = "vehicleURL3" src = "vehicleURL3.png"></img>
-</p>
-
-<p style="font-size:400%;text-align:center;">
-Player 4's combination is:
-</p>
-<p id="Random_choices4" style="font-size:400%;text-align:center;"></p>
-
-<script>
-document.getElementById("Random_choices4").innerHTML = chosenCharacter4 + " with the " + chosenVehicle4;
-
-var characterURL4 = "https://cloudinary-a.akamaihd.net/idemo/image/fetch/h_300/https://mzaksek.github.io/MarioKartWiiRandomizer/" + chosenCharacter4 + ".png";
-var vehicleURL4 = "https://cloudinary-a.akamaihd.net/idemo/image/fetch/h_100/https://mzaksek.github.io/MarioKartWiiRandomizer/vehicles/" + chosenVehicle4 + ".png";
-
-document.getElementById("characterURL4").src = characterURL4;
-document.getElementById("vehicleURL4").src = vehicleURL4;
-</script>
-
-<p id="Random_choices4" style="text-align:center;">
-<img id = "characterURL4" src = "characterURL4.png"></img>
-<img id = "vehicleURL4" src = "vehicleURL4.png"></img>
-</p>
-
-<script>
-document.getElementById("characterURL1").src = characterURL1;
-document.getElementById("vehicleURL1").src = vehicleURL1;
-document.getElementById("characterURL2").src = characterURL2;
-document.getElementById("vehicleURL2").src = vehicleURL2;
-document.getElementById("characterURL3").src = characterURL3;
-document.getElementById("vehicleURL3").src = vehicleURL3;
-document.getElementById("characterURL4").src = characterURL4;
-document.getElementById("vehicleURL4").src = vehicleURL4;
-</script>
-
-<p style="text-align:center;">
-<A HREF="javascript:history.go(0)"><img src = "https://cloudinary-a.akamaihd.net/idemo/image/fetch/https://mzaksek.github.io/MarioKartWiiRandomizer/randomize-button.png"></img></A>
-</p>
-
 </body>
 </html>
