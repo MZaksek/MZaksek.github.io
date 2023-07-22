@@ -25,6 +25,11 @@
       font-size: 300%;
       font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     }
+    .responsive-image {
+    width: 100%;
+    max-width: 828px;
+    height: auto;
+    }
 
     /* Add a media query to adjust the font size on smaller screens */
     @media (max-width: 768px) {
@@ -76,7 +81,7 @@
 </main>
 <footer>
   <p class="refresh-link">
-  <a href="javascript:updatePlayerVisibility(); generateRandomCombinations();"><img src="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@master/MarioKartWiiRandomizer/randomize-button.png" alt="Refresh" width="828" height="176"></a>
+  <a href="javascript:updatePlayerVisibility(); generateRandomCombinations();"><img class="responsive-image" src="https://cdn.jsdelivr.net/gh/MZaksek/MZaksek.github.io@master/MarioKartWiiRandomizer/randomize-button.png" alt="Refresh" width="828" height="176"></a>
   </p>
   <div class="center">
   <p>Additional Options:</p>
